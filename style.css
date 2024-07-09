@@ -255,7 +255,7 @@ main{
     position: absolute;
 
     top: 250px;
-    left: 70px;
+    right: 95%;
 }
 
 .hero-social__title{
@@ -445,6 +445,7 @@ input[type='radio'][id='03']:checked + .text__item::after{
 .main-content__items__img img {
     width: 35%;
     height: 100%;
+    background-size: cover;
 }
 
 .main-content__item{
@@ -541,9 +542,8 @@ input[type='radio'][id='03']:checked + .text__item::after{
     position: relative;
 }
 
-.footer__logo__copy img{
-    width: 106px;
-    height: 43px;
+.footer__logo__copy svg path{
+    fill: #FFF;
 }
 
 .footer__desc{
@@ -678,12 +678,15 @@ input[type='radio'][id='03']:checked + .text__item::after{
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 900px){
     .header__logo{
         width: 100%;
     }
     .burger__btn{
         display: flex;
+    }
+    .burger__menu{
+        top: -265px;
     }
     .header__nav,.header-accoun__btn{
         display: none;
@@ -724,7 +727,6 @@ input[type='radio'][id='03']:checked + .text__item::after{
         margin-bottom: 100px;
     }
     .main-content__items__img img{
-        width: 100%;
         height: 934px;
         padding: 0;
     }
@@ -770,7 +772,7 @@ input[type='radio'][id='03']:checked + .text__item::after{
         line-height: 200%;
     }
 }
-@media (max-width: 480px){
+@media (max-width: 750px){
     .burger__menu{
         height: 350px;
         top: -350px;
@@ -789,7 +791,7 @@ input[type='radio'][id='03']:checked + .text__item::after{
         width: 146px;
         height: 24px;
         top: 150px;
-        left: 50%;
+        right: 5%;
         flex-direction: row;
     }
     .hero__content{
@@ -902,7 +904,7 @@ input[type='radio'][id='03']:checked + .text__item::after{
         width: 100%;
     }
 }
-@media (max-width: 320px){
+@media (max-width: 565px){
     .burger__menu{
         height: 350px;
         top: -350px;
@@ -910,7 +912,6 @@ input[type='radio'][id='03']:checked + .text__item::after{
     .hero__social{
         width: 146px;
         height: 24px;
-        left: 160px;
     }
     .hero::before{
         top: -650px;
